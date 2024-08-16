@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calc-main">
+    <table border="2"  height="400" width="300" align="center" cellspacing ="10">
+        <thead></thead>
+        <tbody>
+        <tr>
+            <th colspan="4">
+                <input type="text" disabled placeholder="CALCULATOR" disabled>
+            </th>
+        </tr>
+        <div class="th-elem">
+        <tr>
+            <th colspan="2" onclick="clearVal(event)">CE</th>
+            <th onclick="getValue(event)">/</th>
+            <th onclick="getValue(event)">*</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">7</th>
+            <th onclick="getValue(event)">8</th>
+            <th onclick="getValue(event)">9</th>
+            <th onclick="getValue(event)">-</th>
+        </tr>
+        <tr>
+            <!-- event handler -->
+            <!-- add event listener -->
+            <th onclick="getValue(event)">4</th>
+            <th onclick="getValue(event)">5</th>
+            <th onclick="getValue(event)">6</th>
+            <th onclick="getValue(event)">+</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">1</th>
+            <th onclick="getValue(event)">2</th>
+            <th onclick="getValue(event)">3</th>
+            <th rowspan="2" onclick="finalResult(event)">=</th>
+        </tr>
+        <tr>
+            <th onclick="getValue(event)">0</th>
+            <th onclick="getValue(event)">.</th>
+            <th id="del">DEL</th>
+            <!-- <th onclick="getValue(event)">%</th> -->
+
+        </tr>
+    </div>
+    </tbody>
+    </table>
+        
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
